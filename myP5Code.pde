@@ -23,11 +23,21 @@ void draw(){
   fill(255, 255, 255); // for the whites of the eyes!
   ellipse(x - 50, y - 50, 30, 30); // left eyeball
   ellipse(x + 50, y - 50, 30, 30); // right eyeball
+
+  fill(0, 0, 0); // for the black of the eyes!
+  ellipse(x - 50, y - 50, 20, 20); // left eyeball
+  ellipse(x + 50, y - 50, 20, 20); // right eyeball
   
 fill(255, 255, 255); // mouth
-  ellipse(200, 100, 150, 80);
+  ellipse(x + 1, y + 5, 150, 80);
   
-  
+  fill(255, 0, 0); // tongue
+  ellipse(x - 1, y + 15, 140, 60); 
+ 
+ x = mouseX;
+y = mouseY;
+
+
 }
 
 
